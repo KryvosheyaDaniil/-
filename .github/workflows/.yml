@@ -1,0 +1,14 @@
+name: My GitHub Action
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      # Додайте інші кроки для виконання вашої дії під час будь-якого пушу до гілки main
+
